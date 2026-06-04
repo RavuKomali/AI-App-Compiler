@@ -1,0 +1,23 @@
+1. Build a CRM with login and dashboard
+2. Build an ecommerce app
+3. Build a hospital management system
+4. Build a school management system
+5. Build a job portal
+6. Build a food delivery app
+7. Build a banking application
+8. Build a social media platform
+9. Build an inventory management system
+10. Build a ticket booking system
+
+Edge Cases
+
+11. Build something useful
+12. Make an app
+13. Build CRM and ecommerce together
+14. Create an app with no login but secure access
+15. Build a system for everyone
+16. Make dashboard only
+17. Add unlimited roles
+18. Create a premium free app
+19. Build CRM and hospital in same app
+20. Generate application

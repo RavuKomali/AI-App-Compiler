@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI App Compiler</title>
+</head>
+<body>
+
+    <h1>AI App Compiler</h1>
+
+    <textarea id="prompt" rows="10" cols="60"
+        placeholder="Enter your app idea"></textarea>
+
+    <br><br>
+
+    <button onclick="generate()">Generate</button>
+
+    <pre id="output"></pre>
+
+    <script>
+        async function generate() {
+
+            const prompt =
+                document.getElementById("prompt").value;
+
+            const response = await fetch(
+                "http://127.0.0.1:5000/generate",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        prompt: prompt
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            document.getElementById("output").textContent =
+                JSON.stringify(data, null, 2);
+        }
+    </script>
+
+</body>
+</html>
